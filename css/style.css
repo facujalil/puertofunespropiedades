@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Inter:wght@400;700&family=Lexend+Deca:wght@400');
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+body {
+    height: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/agsquare.png);
+    background-repeat: repeat;
+}
+
+#header-principal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header-general {
+    align-items: center;
+    height: 20vh;
+    display: flex;
+    background-color: #2b2926;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a::after {
+    color: white;
+}
+
+#logo {
+    width: 75px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+.active {
+    color: #02979d;
+}
+
+#header-principal .contenedor-logo-nav {
+    background-color: #2b2926;
+}
+
+.contenedor-logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+#logo,
+nav {
+    margin: 0 80px;
+}
+
+.contenedor-titulo {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.decorfacil.com/wp-content/uploads/2016/03/imagem25-8.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+h1 {
+    margin: 0 80px;
+    font-size: 40px;
+    color: white;
+    font-weight: lighter;
+}
+
+span {
+    font-weight: bold;
+}
+
+section {
+    padding: 100px;
+    color: black;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    color: #f5f5f1;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    background-color: #02979d;
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+    user-select: none;
+    text-align: center;
+}
+
+h2:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+h2:hover:before {
+    width: 100%;
+}
+
+h3 {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    user-select: none;
+}
+
+p,
+h4,
+a {
+    font-family: 'Inter';
+}
+
+h4 {
+    font-size: 22px;
+}
+
+.nuestros-servicios-contenedor-articulos,
+.propiedades-destacadas-contenedor-articulos,
+#contactanos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#nuestros-servicios {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nuestros-servicios-contenedor-articulos article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 45px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+#nuestros-servicios-img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.nuestros-servicios-contenedor-articulos article,
+.propiedades-destacadas-contenedor-articulos article {
+    margin-right: 120px;
+}
+
+.nuestros-servicios-contenedor-articulos article:last-child,
+.propiedades-destacadas-contenedor-articulos article:last-child {
+    margin-right: 0;
+}
+
+#propiedades-destacadas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#propiedades-destacadas h4 {
+    margin-bottom: 20px;
+}
+
+.propiedades-destacadas-contenido {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.propiedades-destacadas-contenedor-articulos article {
+    background-color: white;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.propiedades-destacadas-contenedor-articulos article:last-child {
+    margin-right: 0;
+}
+
+.propiedades-destacadas-contenedor-articulos article img {
+    object-fit: cover;
+    height: 230px;
+    width: 100%;
+}
+
+.propiedades-destacadas-contenedor-img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.propiedades-destacadas-contenedor-texto {
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+.propiedades-destacadas-contenedor-articulos a {
+    padding: 5px;
+    color: #02979d;
+    text-align: center;
+    border: 1px solid #02979d;
+    margin: 30px 20px 45px 20px;
+}
+
+.propiedades-destacadas-contenedor-articulos a:hover {
+    background-color: #02979d;
+    color: white;
+}
+
+.propiedades-destacadas-contenedor-link {
+    margin-top: 50px;
+}
+
+.propiedades-destacadas-contenedor-link a {
+    padding: 10px;
+    text-align: center;
+    background-color: #02979d;
+}
+
+
+#contactanos {
+    justify-content: flex-end;
+    padding: 125px 100px 75px 100px;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.wallpapertip.com/wmimgs/59-593279_real-estate-hd-wallpapers-real-estate-image-hd.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#contactanos h2 {
+    margin-bottom: 50px;
+}
+
+#contactanos p {
+    margin-bottom: 50px;
+    color: white;
+}
+
+#contactanos a {
+    background-color: #02979d;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #2b2926;
+    color: white;
+}
+
+/*Colores*/
+.verde {
+    color: #2D572C;
+}
+
+.turquesa {
+    color: #02979d;
+}
+
+/*Sobre Nosotros*/
+
+#sobre-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#sobre-nosotros img {
+    width: 650px;
+    height: 100%;
+}
+
+#sobre-nosotros p {
+    width: 340px;
+}
+
+/*Anuncios*/
+
+#anuncios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#anuncios article:last-child {
+    margin-bottom: 0;
+}
+
+/*Contacto*/
+
+#contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+#form-contacto .div-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+
+textarea {
+    height: 100px;
+    padding: 10px 0 0 10px;
+    resize: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+}
+
+input,
+select,
+textarea:focus {
+  outline: 0 none;
+}
+
+#submit {
+    background-color: #02979d;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    #logo,
+    nav {
+        margin: 0;
+    }
+
+    .contenedor-logo-nav {
+        justify-content: center;
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav a {
+        margin-right: 0;
+    }
+
+    .contenedor-titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 34px;
+        font-family: 'Inter', sans-serif;
+        color: white;
+        font-weight: lighter;
+        margin: 0;
+        text-align: center;
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+        width: 85vw;
+    }
+
+    .nuestros-servicios-contenedor-articulos,
+    .propiedades-destacadas-contenedor-articulos,
+    #contactanos {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nuestros-servicios-contenedor-articulos article,
+    .propiedades-destacadas-contenedor-articulos article {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .nuestros-servicios-contenedor-articulos article:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .propiedades-destacadas-contenedor-articulos article img {
+        width: 280px;
+    }
+
+    .propiedades-destacadas-contenedor-texto {
+        padding: 0 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+
+
+    .propiedades-destacadas-contenedor-link {
+        margin-top: 0;
+    }
+
+    #contactanos {
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        background-color: #2b2926;
+        color: white;
+    }
+
+    footer p {
+        width: 60%;
+    }
+
+    footer p:last-child {
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    /*Sobre Nosotros*/
+
+
+    .contenedor-sobre-nosotros {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #sobre-nosotros img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    #sobre-nosotros p {
+        width: 100%;
+    }
+
+}
