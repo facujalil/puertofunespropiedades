@@ -145,10 +145,10 @@ h4 {
 }
 
 .nuestros-servicios-contenedor-articulos,
-.propiedades-destacadas-contenedor-articulos,
+.propiedades-contenedor-articulos,
 #contactanos {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #nuestros-servicios {
@@ -177,13 +177,11 @@ h4 {
     margin-bottom: 15px;
 }
 
-.nuestros-servicios-contenedor-articulos article,
-.propiedades-destacadas-contenedor-articulos article {
-    margin-right: 120px;
+.nuestros-servicios-contenedor-articulos article {
+    margin-right: 100px;
 }
 
-.nuestros-servicios-contenedor-articulos article:last-child,
-.propiedades-destacadas-contenedor-articulos article:last-child {
+.nuestros-servicios-contenedor-articulos article:last-child {
     margin-right: 0;
 }
 
@@ -194,11 +192,11 @@ h4 {
     flex-direction: column;
 }
 
-#propiedades-destacadas h4 {
+#propiedades-destacadas h4, #anuncios h4 {
     margin-bottom: 20px;
 }
 
-.propiedades-destacadas-contenido {
+.propiedades-contenido {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -206,26 +204,27 @@ h4 {
     padding: 20px;
 }
 
-.propiedades-destacadas-contenedor-articulos article {
+.propiedades-contenedor-articulos article {
     background-color: white;
-    margin-right: 30px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 330px;
     box-shadow: 0px 3px 6px #00000029;
 }
 
-.propiedades-destacadas-contenedor-articulos article:last-child {
+.propiedades-contenedor-articulos article:last-child {
     margin-right: 0;
 }
 
-.propiedades-destacadas-contenedor-articulos article img {
+.propiedades-contenedor-articulos article img {
     object-fit: cover;
     height: 230px;
     width: 100%;
 }
 
-.propiedades-destacadas-contenedor-img {
+.propiedades-contenedor-img {
     height: 100%;
     width: 100%;
     margin-bottom: 20px;
@@ -233,22 +232,22 @@ h4 {
     align-items: flex-start;
 }
 
-.propiedades-destacadas-contenedor-texto {
+.propiedades-contenedor-texto {
     padding: 0 20px 0 20px;
     display: flex;
     flex-direction: column;
-    height: 120px;
+    height: 80px;
 }
 
-.propiedades-destacadas-contenedor-articulos a {
+.propiedades-contenedor-articulos a {
     padding: 5px;
     color: #02979d;
     text-align: center;
     border: 1px solid #02979d;
-    margin: 30px 20px 45px 20px;
+    margin: 100px 20px 45px 20px;
 }
 
-.propiedades-destacadas-contenedor-articulos a:hover {
+.propiedades-contenedor-articulos a:hover {
     background-color: #02979d;
     color: white;
 }
@@ -320,17 +319,23 @@ footer {
 
 .contenedor-sobre-nosotros {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
 }
 
+.sobre-nosotros-contenedor-img {
+    width: 50vw;
+    height: 100%;
+}
+
 #sobre-nosotros img {
-    width: 650px;
+    width: 100%;
     height: 100%;
 }
 
 #sobre-nosotros p {
-    width: 340px;
+    width: 30vw;
+    padding-left: 40px;
 }
 
 /*Anuncios*/
@@ -453,14 +458,14 @@ textarea:focus {
     }
 
     .nuestros-servicios-contenedor-articulos,
-    .propiedades-destacadas-contenedor-articulos,
+    .propiedades-contenedor-articulos,
     #contactanos {
         flex-direction: column;
         justify-content: center;
     }
 
     .nuestros-servicios-contenedor-articulos article,
-    .propiedades-destacadas-contenedor-articulos article {
+    .propiedades-contenedor-articulos article {
         margin-right: 0;
         margin-bottom: 50px;
     }
@@ -470,15 +475,15 @@ textarea:focus {
         margin-bottom: 0;
     }
 
-    .propiedades-destacadas-contenedor-articulos article img {
-        width: 280px;
+    .propiedades-contenedor-articulos article img {
+        width: 100%;
     }
 
-    .propiedades-destacadas-contenedor-texto {
+    .propiedades-contenedor-texto {
         padding: 0 20px 0 20px;
         display: flex;
         flex-direction: column;
-        height: 200px;
+        height: 100px;
     }
 
 
@@ -521,13 +526,28 @@ textarea:focus {
         width: 100%;
     }
     
+.sobre-nosotros-contenedor-img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
     #sobre-nosotros img {
         width: 100%;
-        margin-bottom: 50px;
     }
     
     #sobre-nosotros p {
         width: 100%;
+        padding-left: 0;
+    }
+
+    /*Contacto*/
+
+    #form-contacto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
     }
 
 }
