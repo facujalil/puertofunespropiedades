@@ -346,7 +346,7 @@ footer {
     align-items: center;
 }
 
-#anuncios article:last-child {
+#anuncios .propiedades-contenedor-articulos:last-child article:last-child {
     margin-bottom: 0;
 }
 
