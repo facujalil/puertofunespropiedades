@@ -518,7 +518,10 @@ textarea:focus {
     }
 
     /*Sobre Nosotros*/
-
+    
+    #sobre-nosotros {
+        padding: 50px;
+    }
 
     .contenedor-sobre-nosotros {
         justify-content: center;
