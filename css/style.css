@@ -10,8 +10,7 @@
 
 body {
     height: 100%;
-    max-width: 1440px;
-    min-width: 320px;
+    width: 100%;
     background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/agsquare.png);
     background-repeat: repeat;
 }
@@ -518,9 +517,10 @@ textarea:focus {
     }
 
     /*Sobre Nosotros*/
-    
+
     #sobre-nosotros {
         padding: 50px;
+        height: 80vh;
     }
 
     .contenedor-sobre-nosotros {
