@@ -151,11 +151,20 @@ h4 {
 }
 
 #nuestros-servicios {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.nuestros-servicios-contenedor-titulo {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+}
+
+.nuestros-servicios-contenedor-articulos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nuestros-servicios-contenedor-articulos article {
@@ -163,25 +172,27 @@ h4 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     background-color: white;
     border-radius: 50%;
     padding: 45px;
     box-shadow: 0px 3px 6px #00000029;
+    margin-right: 20px;
+}
+
+.nuestros-servicios-contenedor-articulos article:last-child {
+    margin-right: 0;
+}
+
+h3 {
+    width: 145px;
+    text-align: center;
 }
 
 #nuestros-servicios-img {
     width: 70px;
     margin-bottom: 15px;
-}
-
-.nuestros-servicios-contenedor-articulos article {
-    margin-right: 100px;
-}
-
-.nuestros-servicios-contenedor-articulos article:last-child {
-    margin-right: 0;
 }
 
 #propiedades-destacadas {
@@ -209,7 +220,8 @@ h4 {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 330px;
+    max-width: 330px;
+    min-width: 220px;
     box-shadow: 0px 3px 6px #00000029;
 }
 
@@ -469,10 +481,28 @@ textarea:focus {
         margin-bottom: 50px;
     }
 
+    #nuestros-servicios {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nuestros-servicios-contenedor-articulos {
+        justify-content: center;
+    }
+
     .nuestros-servicios-contenedor-articulos article:last-child {
         margin-right: 0;
         margin-bottom: 0;
     }
+
+    .nuestros-servicios-contenedor-articulos {
+        justify-content: center;
+    }
+
+.propiedades-contenedor-articulos article {
+    max-width: 320px;
+    min-width: 280px;
+}
 
     .propiedades-contenedor-articulos article img {
         width: 100%;
